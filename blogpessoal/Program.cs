@@ -16,7 +16,11 @@ namespace blogpessoal
             var builder = WebApplication.CreateBuilder(args);
 
             // Add services to the container.
-            builder.Services.AddControllers();
+            builder.Services.AddControllers()
+                .AddNewtonsoftJson(options =>
+                {
+                    options.SerializerSettings.ReferenceLoopHandling = Newtonsoft.Json.ReferenceLoopHandling.Ignore;
+                });
 
             //conexão com o banco de dados
             var connectionString = builder.Configuration.GetConnectionString("DefaultConnection");
@@ -35,9 +39,9 @@ namespace blogpessoal
             builder.Services.AddSwaggerGen();
 
             //configuração do cors
-            builder.Services.AddCors(options => 
+            builder.Services.AddCors(options =>
             {
-                options.AddPolicy(name: "MyPolicy", policy => 
+                options.AddPolicy(name: "MyPolicy", policy =>
                 {
                     policy.AllowAnyOrigin()
                     .AllowAnyMethod()
