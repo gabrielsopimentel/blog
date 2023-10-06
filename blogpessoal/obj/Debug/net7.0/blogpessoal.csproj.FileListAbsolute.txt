@@ -81,3 +81,4 @@ C:\Users\gabri\aspnet\blogpessoal\blogpessoal\obj\Debug\net7.0\blogpessoal.genru
 C:\Users\gabri\aspnet\blogpessoal\blogpessoal\obj\Debug\net7.0\ref\blogpessoal.dll
 C:\Users\gabri\aspnet\blogpessoal\blogpessoal\bin\Debug\net7.0\BCrypt.Net-Core.dll
 C:\Users\gabri\aspnet\blogpessoal\blogpessoal\bin\Debug\net7.0\Microsoft.AspNetCore.Authentication.JwtBearer.dll
+C:\Users\gabri\aspnet\blogpessoal\blogpessoal\bin\Debug\net7.0\testEnvironments.json
