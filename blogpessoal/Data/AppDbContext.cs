@@ -42,7 +42,7 @@ namespace blogpessoal.Data
                 //Se uma propriedade da Classe Auditable estiver sendo criada. 
                 if (insertedEntry is Auditable auditableEntity)
                 {
-                    auditableEntity.Data = new DateTimeOffset(DateTime.Now, new TimeSpan(-3, 0, 0));
+                    auditableEntity.Data = new DateTimeOffset(DateTime.Now);
                 }
             }
 
@@ -55,7 +55,7 @@ namespace blogpessoal.Data
                 //Se uma propriedade da Classe Auditable estiver sendo atualizada.  
                 if (modifiedEntry is Auditable auditableEntity)
                 {
-                    auditableEntity.Data = new DateTimeOffset(DateTime.Now, new TimeSpan(-3, 0, 0));
+                    auditableEntity.Data = new DateTimeOffset(DateTime.Now);
                 }
             }
 
