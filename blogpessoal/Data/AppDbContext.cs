@@ -1,4 +1,5 @@
-﻿using blogpessoal.Model;
+﻿using blogpessoal.Configuration;
+using blogpessoal.Model;
 using Microsoft.EntityFrameworkCore;
 
 namespace blogpessoal.Data
@@ -60,6 +61,14 @@ namespace blogpessoal.Data
             }
 
             return base.SaveChangesAsync(cancellationToken);
+        }
+
+        // Ajusta a Data para o formato UTC - Compatível com o Postgres
+        protected override void ConfigureConventions(ModelConfigurationBuilder configurationBuilder)
+        {
+            configurationBuilder
+                .Properties<DateTimeOffset>()
+                .HaveConversion<DateTimeOffsetConverter>();
         }
     }
 }
