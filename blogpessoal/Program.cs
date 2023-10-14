@@ -34,12 +34,14 @@ namespace blogpessoal
             //conexão com o banco de dados
             if (builder.Configuration["Enviroment:Start"] == "PROD")
             {
+                // Conexão com o PostgresSQL - Nuvem
                 builder.Configuration.SetBasePath(Directory.GetCurrentDirectory()).AddJsonFile("secrets.json");
                 var connectionString = builder.Configuration.GetConnectionString("ProdConnection");
                 builder.Services.AddDbContext<AppDbContext>(options => options.UseNpgsql(connectionString));
             }
             else
             {
+                // Conexão com o SQL Server - Localhost
                 var connectionString = builder.Configuration.GetConnectionString("DefaultConnection");
                 builder.Services.AddDbContext<AppDbContext>(options => options.UseSqlServer(connectionString));
             }
@@ -128,6 +130,10 @@ namespace blogpessoal
             });
 
             var app = builder.Build();
+
+            // habilita a compatibilidade com o tipo de dado DateTimeOffset no Banco de dados PostgreSQL
+            AppContext.SetSwitch("Npgsql.EnableLegacyTimestampBehavior", true);
+
 
             //criar banco de dados e as tabelas
             using (var scope = app.Services.CreateAsyncScope())
