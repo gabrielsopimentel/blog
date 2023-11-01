@@ -3671,11 +3671,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\gabri\\aspnet\\blogpessoal\\blogpessoal\\blogpessoal.csproj",
+      "projectUniqueName": "C:\\Users\\gabri\\bloco2\\aspnet\\blogpessoal\\blogpessoal\\blogpessoal.csproj",
       "projectName": "blogpessoal",
-      "projectPath": "C:\\Users\\gabri\\aspnet\\blogpessoal\\blogpessoal\\blogpessoal.csproj",
+      "projectPath": "C:\\Users\\gabri\\bloco2\\aspnet\\blogpessoal\\blogpessoal\\blogpessoal.csproj",
       "packagesPath": "C:\\Users\\gabri\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\gabri\\aspnet\\blogpessoal\\blogpessoal\\obj\\",
+      "outputPath": "C:\\Users\\gabri\\bloco2\\aspnet\\blogpessoal\\blogpessoal\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\gabri\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -3782,7 +3782,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.402\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.403\\RuntimeIdentifierGraph.json"
       }
     }
   }

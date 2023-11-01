@@ -32,7 +32,7 @@ namespace blogpessoal
                 });
 
             //conexão com o banco de dados
-            if (builder.Configuration["Enviroment:Start"] == "PROD")
+            if (builder.Configuration["Environment:Start"] == "PROD")
             {
                 // Conexão com o PostgresSQL - Nuvem
                 builder.Configuration.SetBasePath(Directory.GetCurrentDirectory()).AddJsonFile("secrets.json");
@@ -154,7 +154,7 @@ namespace blogpessoal
             }
 
             //inicializa o CORS
-            app.UseCors("MyPolice");
+            app.UseCors("MyPolicy");
 
             app.UseAuthentication();
 
