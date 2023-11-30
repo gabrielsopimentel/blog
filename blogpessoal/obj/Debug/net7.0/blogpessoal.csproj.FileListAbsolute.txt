@@ -87,8 +87,8 @@ C:\Users\gabri\aspnet\blogpessoal\blogpessoal\bin\Debug\net7.0\Scrutor.dll
 C:\Users\gabri\aspnet\blogpessoal\blogpessoal\bin\Debug\net7.0\Swashbuckle.AspNetCore.Filters.dll
 C:\Users\gabri\aspnet\blogpessoal\blogpessoal\bin\Debug\net7.0\Swashbuckle.AspNetCore.Filters.Abstractions.dll
 C:\Users\gabri\bloco2\aspnet\blogpessoal\blogpessoal\bin\Debug\net7.0\appsettings.Development.json
-C:\Users\gabri\bloco2\aspnet\blogpessoal\blogpessoal\bin\Debug\net7.0\testEnvironments.json
 C:\Users\gabri\bloco2\aspnet\blogpessoal\blogpessoal\bin\Debug\net7.0\appsettings.json
+C:\Users\gabri\bloco2\aspnet\blogpessoal\blogpessoal\bin\Debug\net7.0\testEnvironments.json
 C:\Users\gabri\bloco2\aspnet\blogpessoal\blogpessoal\bin\Debug\net7.0\blogpessoal.exe
 C:\Users\gabri\bloco2\aspnet\blogpessoal\blogpessoal\bin\Debug\net7.0\blogpessoal.deps.json
 C:\Users\gabri\bloco2\aspnet\blogpessoal\blogpessoal\bin\Debug\net7.0\blogpessoal.runtimeconfig.json
